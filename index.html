@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Inter:wght@300;500&family=Mitr:wght@300&family=Orbitron:wght@800&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button id="darkToggle" data-mode="light"><i class="fa-sharp fa-solid fa-moon"></i></button>
+        <h1 id="heading"><i class="fa-solid fa-stopwatch fa-bounce"></i> Stop Watch</h1>
+    </header>
+    <main>
+        <div id="display">
+            <span id="hours" class="timeIndicator">00</span>:
+            <span id="minutes" class="timeIndicator">00</span>:
+            <span id="seconds" class="timeIndicator">00</span>:
+            <span id="milliseconds" class="timeIndicator">00</span>
+        </div>
+        <div id="buttons">
+            <button id="lapse" Title="Lapse Time" disabled><i class="fa-solid fa-thumbtack"></i></button>
+            <button id="start" data-mode="Start" Title="Start"><i class="fa-solid fa-play fa-beat"></i></button>
+            <button id="reset" Title="Reset"><i class="fa-solid fa-rotate-right fa-spin"></i></button>
+        </div>
+
+        <div id="lapseContent">
+            <table id="lapseTable">
+                <tr id="headingTable">
+                    <th>Lap</th>
+                    <th>Lapse Time</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/1c1d231961.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
