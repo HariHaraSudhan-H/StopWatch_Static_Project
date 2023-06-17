@@ -72,8 +72,7 @@ function lapseTime() {
     <td>${++lapseCount}</td>
     <td>${display.innerText}</td>
 </tr>`
-    document.get
-    ElementById("lapseContent").style.display = 'flex'
+    document.getElementById("lapseContent").style.display = 'flex'
 }
 
 // Increases the Millisecond count
