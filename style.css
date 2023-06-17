@@ -4,6 +4,8 @@ body{
     background-image: linear-gradient();
     margin: 0;
 }
+
+/* LightMode-DarkMode-Toggle */
 #darkToggle{
     /* width :10px;
     height: 10px; */
@@ -16,6 +18,8 @@ body{
     color: #d6d6d6;
     padding: .5rem;
 }
+
+/* Heading */
 h1{
     font-size: 5rem;
     font-family: 'Patrick Hand', cursive;
@@ -23,11 +27,15 @@ h1{
     text-align: center;
     font-weight: 1000;
 }
+
+/* Main section of the page */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* Buttons */
 button{
     border: 0px solid black;
     border-radius: 50%;
@@ -51,6 +59,11 @@ button:disabled{
 #lapse,#reset{
     display: none;
 }
+#start{
+    background-color: #4361ee;
+}
+
+/* Time Display Sections */
 #display{
     font-size: 4rem;
     font-family: 'Chivo', sans-serif;
@@ -68,6 +81,8 @@ button:disabled{
 .timeIndicator{
     width: 82px;
 }
+
+/* Lapse List Display Section */
 #lapseContent{
     width: 100%;
     margin-top: 1rem;

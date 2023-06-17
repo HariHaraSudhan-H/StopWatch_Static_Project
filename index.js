@@ -18,6 +18,7 @@ resetButton.addEventListener('click', resetPage);
 lapseButton.addEventListener('click', lapseTime);
 darkToggle.addEventListener('click', toggle);
 
+// Main function to start counter
 function counter() {
     console.log('inside counter')
     let text = startButton.getAttribute('data-mode');
@@ -44,6 +45,7 @@ function counter() {
     }
 }
 
+// Resets the timer
 function resetPage() {
     resetFunction(hours);
     resetFunction(minutes);
@@ -56,9 +58,13 @@ function resetPage() {
     lapseCount = 0;
     document.getElementById("lapseContent").style.display = ''
 }
+
+// resets the Seconds/minutes/Hours if it moves against higher limit
 function resetFunction(count) {
     count.innerHTML = '00';
 }
+
+// Controls the Lapsing Time Function
 function lapseTime() {
     // lapseArray.push(display.innerHTML);
     console.log(display.innerText);
@@ -66,8 +72,11 @@ function lapseTime() {
     <td>${++lapseCount}</td>
     <td>${display.innerText}</td>
 </tr>`
-    document.getElementById("lapseContent").style.display = 'flex'
+    document.get
+    ElementById("lapseContent").style.display = 'flex'
 }
+
+// Increases the Millisecond count
 function increaseCount() {
     let result = Number(milliseconds.innerHTML) + 1;
     if (result <= 9) {
@@ -76,6 +85,8 @@ function increaseCount() {
         milliseconds.innerHTML = result;
     }
 }
+
+// Check for higher limit
 function check() {
     function twoDigiter(time) {
         let result = Number(time.innerHTML) + 1;
@@ -109,6 +120,7 @@ function check() {
     }
 }
 
+// Contols the dark-light mode toggle
 function toggle() {
     if (darkToggle.getAttribute('data-mode') == 'light') {
         document.body.style.backgroundColor = 'black';
